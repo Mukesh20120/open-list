@@ -1,0 +1,11 @@
+/* MUI styles go in the "mui" layer so Tailwind utilities can override them */
+@layer theme, base, mui, components, utilities;
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html,
+body,
+#root {
+  height: 100%;
+}
